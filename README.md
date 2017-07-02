@@ -163,3 +163,14 @@ For the third image, the model is relatively sure that this is a beware of ice/s
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
 The visual output of the trained network's feature maps are visualized at the end of the notebook. The second layer outputs are hard to interpret, but the first layer outputs provides some intuition. For the 5 x 5 network, the features include derivative map focusing on different directions, and a black/white map. In contrast, the 3 x 3 network only generated two derivative maps and the third neuron is never activated.
+
+### Possible further improvements
+1. Normalized the images to have 0 mean and range [-1, 1] instead of range [0, 1].
+2. Visualize the tensorflow computation graph following the tutorial [here](https://www.tensorflow.org/get_started/graph_viz).
+3. Implement early terminating to determine the epoch number.
+4. Balance the number of samples in each class. [This page](https://medium.com/@vivek.yadav/dealing-with-unbalanced-data-generating-additional-data-by-jittering-the-original-image-7497fe2119c3) shows how to do that.
+5. Alternative network structures.
+
+### Further readings
+* About [CNN](http://www.deeplearningbook.org/contents/convnets.html)
+* About [optimizer](http://sebastianruder.com/optimizing-gradient-descent/index.html#adam)
